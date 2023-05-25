@@ -7,7 +7,6 @@ data_folder="./data"
 root_yaml_file="$data_folder/my-realm.yaml"
 combined="./combined.yaml"
 truncate -s 0 $combined
-
 cat "$root_yaml_file" > $combined
 
 # Define the subdirectories and their corresponding attributes
