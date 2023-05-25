@@ -1,0 +1,10 @@
+clientId: my-client
+name: my-client
+enabled: true
+redirectUris:
+  - http://localhost:8080/callback
+defaultRoles:
+  - user
+access:
+  roles: [user]
+  scopes: [profile]

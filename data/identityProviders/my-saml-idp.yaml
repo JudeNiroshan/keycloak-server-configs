@@ -1,0 +1,3 @@
+providerId: saml
+alias: my-saml-idp
+displayName: My SAML IDP
