@@ -6,6 +6,7 @@ data_folder="./data"
 # Retrieve the content of the root YAML file
 root_yaml_file="$data_folder/my-realm.yaml"
 combined="./combined.yaml"
+truncate -s 0 $combined
 
 cat "$root_yaml_file" > $combined
 
@@ -35,3 +36,5 @@ for ((i=0; i<${#subdirectories[@]}; i+=2)); do
     echo "$new" > $combined
   done
 done
+
+git add $combined
